@@ -2,26 +2,90 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<title>Coaching Center</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>ZOO</title>
 	<style>
-		@media (min-width: 992px){ .col-lg }
-		.col-lg{width: 33.33%}
-		@media (min-width: 768px) and (max-width: 991px) { .col-md }
-		.col-md{width: 50%}
-		@media (max-width: 767px) {.col-sd}
-		.col-sd{width:100%}
+		* {
+			box-sizing: border-box;
+		}
+		.row{width: 100%;
+		}
+		@media (min-width: 768px) and (max-width: 991px) { .col-md{
+			width: 50%;
+			float: left;
+			} 
+		}
+		@media (max-width: 767px) {.col-sd {
+			width:100%;
+			float: left;
+			}
+		}
+		@media (min-width: 992px){ .col-lg{
+			width:33.33%;
+			float: left;
+			
+			} 
+		}
 		h1 {
 			text-align: center;
 			font-family: "Times New Roman", Times, serif;
+			margin-bottom: 15px
 		}
+		
+		#heading{
+			float: right;
+			background-color: lightsalmon;
+			font-size: 175%;
+			border: 1px solid black;
+			margin-top: auto;
+			margin-bottom: auto;
+		}
+		#content{
+			font-size: 125%;
+			clear: right;
+		}
+		div {
+			
+			display: table;
+			}
+		#box {
+			padding: 10px 10px 10px 10px;
+			}
+		section {
+			border: 1px solid black;
+			background-color: lavender;
+		}
+
 
 	</style>
 </head>
 <body>
-	<h1>Our Courses</h1>
+	<h1>Wild Animals</h1>
 	<div class="row">
-		<div class="col-lg col-md col-sd" ><div><p>course heading1</p></div><p>course content</p></div>
-		<div class="col-lg col-md col-sd" ><div><p>course heading2</p></div><p>course content</p></div>
-		<div class="col-lg col-md col-sd" ><div><p>course heading3</p></div><p>course content</p></div>
+		<div class="col-lg col-md col-sd" id="box">
+          <section>
+          <p id="heading">Lion</p>
+          <p id="content">
+          	The lion (Panthera leo) is a species in the family Felidae and a member of the genus Panthera. It is most recognisable for its muscular, deep-chested body, short, rounded head, round ears, and a hairy tuft at the end of its tail. It is sexually dimorphic; adult male lions have a prominent mane. With a typical head-to-body length of 184–208 cm (72–82 in) they are larger than females at 160–184 cm (63–72 in). It is a social species, forming groups called prides. 
+          </p>
+          </section>
+		</div>
+		<div class="col-lg col-md col-sd" id="box" >
+		<section>
+		<p id="heading">Rhinoceros</p>
+		<p id="content">
+			A rhinoceros (/raɪˈnɒsərəs/, from Greek rhinokerōs, meaning 'nose-horned', from rhis, meaning 'nose', and keras, meaning 'horn'), commonly abbreviated to rhino, is one of any five extant species of odd-toed ungulates in the family Rhinocerotidae, as well as any of the numerous extinct species therein. Two of the extant species are native to Africa, and three to Southern Asia. The term "rhinoceros" is often more broadly applied to now extinct species of the superfamily Rhinocerotoidea.
+		</p>
+		</section>
+		</div>
+		<div class="col-lg col-sd" id="box">
+		<section>
+		<p id="heading">Hyena</p>
+		<p id="content">
+			Hyenas or hyaenas (from Ancient Greek ὕαινα, hýaina[1]) are feliform carnivoran mammals of the family Hyaenidae /haɪˈɛnɪdiː/. With only four extant species (in three genera), it is the fifth-smallest biological family in the Carnivora, and one of the smallest in the class Mammalia.[2] Despite their low diversity, hyenas are unique and vital components of most African ecosystems.Although phylogenetically closer to felines and viverrids, as part of suborder Feliformia, hyenas are behaviourally and morphologically similar to canines in several elements of convergent evolution; both hyenas and canines are non-arboreal, cursorial hunters that catch prey with their teeth rather than claws. Both eat food quickly and may store it, and their calloused feet with large, blunt, nonretractable claws are adapted for running and making sharp turns. However, hyenas' grooming, scent marking, defecation habits, mating and parental behaviour are consistent with the behaviour of other feliforms.
+		</p>
+		</section>
+		</div>
+	</div>
 </body>
 </html>
